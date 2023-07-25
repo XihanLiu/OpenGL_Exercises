@@ -73,7 +73,7 @@ int main(){
     glGenTextures(1, &texture2);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
-    unsigned char *data_1 = stbi_load("unicorn.png", &width, &height, &nrChannels, 0);
+    unsigned char *data_1 = stbi_load("awesomeface.png", &width, &height, &nrChannels, 0);
     if (data_1)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA,
